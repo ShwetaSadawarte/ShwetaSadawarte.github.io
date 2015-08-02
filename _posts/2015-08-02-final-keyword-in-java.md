@@ -7,9 +7,9 @@ tags : [final keyword, final class, final variable, final method, java]
 
 Final keyword can be used with variables, methods and class. 
 
-##Final Keyword =
+##Final Keyword 
 
-###final variables -
+###final variables 
 - final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. 
 - It is a good practice to name final variable in all CAPS.
 - Local final variable must be initialized during declaration.
@@ -48,7 +48,7 @@ class Sample {
 }
 {% endhighlight %}
 
-###final method -
+###final method 
 A final method cannot be overridden. Which means even though a subclass can call the final method of parent class without any issues but it cannot override it.
 **Example -** You cannot override method. You will get compile time error.
 
@@ -88,7 +88,7 @@ class ABC extends Sample {
 }
 {% endhighlight %}
 
-###final class -
+###final class 
 We cannot extend a final class. If you make any class as final, you cannot extend it.
 **Example -** You will get Compile Time Error
 
