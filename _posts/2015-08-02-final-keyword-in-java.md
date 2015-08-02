@@ -107,7 +107,7 @@ class ABC extends Sample{
 }
 {% endhighlight %}
 
-**Note -**
+**Note**
 - A constructor cannot be declared as final. Because constructor is never inherited.
 - All variables declared in an interface are by default final.
 - If method parameters are declared final then the value of these parameters cannot be changed.
