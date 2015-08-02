@@ -10,11 +10,11 @@ Final keyword can be used with variables, methods and class.
 ##Final Keyword =
 
 ###final variables -
--final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. 
--It is a good practice to name final variable in all CAPS.
--Local final variable must be initialized during declaration.
--A final variable that have no value at the time of declaration it is called `blank final variable` or `uninitialized final variable`. It can be initialized in the constructor only. 
--The blank final variable can be static also which will be initialized in the static block only.
+- final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. 
+- It is a good practice to name final variable in all CAPS.
+- Local final variable must be initialized during declaration.
+- A final variable that have no value at the time of declaration it is called `blank final variable` or `uninitialized final variable`. It can be initialized in the constructor only. 
+- The blank final variable can be static also which will be initialized in the static block only.
 
 **Example -** Modifying final variable gives Compile Time Error
 
@@ -108,8 +108,8 @@ class ABC extends Sample{
 {% endhighlight %}
 
 **Note -**
--A constructor cannot be declared as final. Because constructor is never inherited.
--All variables declared in an interface are by default final.
--If method parameters are declared final then the value of these parameters cannot be changed.
+- A constructor cannot be declared as final. Because constructor is never inherited.
+- All variables declared in an interface are by default final.
+- If method parameters are declared final then the value of these parameters cannot be changed.
 
 
