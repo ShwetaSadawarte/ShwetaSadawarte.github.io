@@ -16,7 +16,8 @@ Final keyword can be used with variables, methods and class.
 - A final variable that have no value at the time of declaration it is called `blank final variable` or `uninitialized final variable`. It can be initialized in the constructor only. 
 - The blank final variable can be static also which will be initialized in the static block only.
 
-**Example -** Modifying final variable gives Compile Time Error
+**Example -** 
+Modifying final variable gives Compile Time Error
 
 {% highlight java %}
 class Car {  
@@ -31,7 +32,8 @@ class Car {
 }
 {% endhighlight %}
 
-**Example -** For initializing blank final variable
+**Example -** 
+For initializing blank final variable
 {% highlight java %}
 class Sample {  
     final int MAX_VALUE;	//Blank final variable	 
@@ -50,7 +52,8 @@ class Sample {
 
 ###final method 
 A final method cannot be overridden. Which means even though a subclass can call the final method of parent class without any issues but it cannot override it.
-**Example -** You cannot override method. You will get compile time error.
+**Example -** 
+You cannot override method. You will get compile time error.
 
 {% highlight java %}
 class Sample {  
@@ -71,7 +74,8 @@ class ABC extends Sample {
 }
 {% endhighlight %}
 
-**Example -** You can inherit method but cannot override.
+**Example -** 
+You can inherit method but cannot override.
 
 {% highlight java %}
 class Sample {  
@@ -108,6 +112,7 @@ class ABC extends Sample{
 {% endhighlight %}
 
 **Note**
+
 - A constructor cannot be declared as final. Because constructor is never inherited.
 - All variables declared in an interface are by default final.
 - If method parameters are declared final then the value of these parameters cannot be changed.
