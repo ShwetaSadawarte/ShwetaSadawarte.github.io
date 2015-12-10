@@ -7,15 +7,15 @@ tags : [lambda, java8, java]
 
 ###Optional class =
 <p>Optional is a **container object** which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</p>
-As a java programmer you have seen null pointer exception many times.
-Java SE 8 introduces a new class called java.util.Optional that solves some of the problems caused by the null reference.
+<p>As a java programmer you have seen null pointer exception many times.</p>
+<p>Java SE 8 introduces a new class called **java.util.Optional** that solves some of the problems caused by the null reference.</p>
 
 {% highlight java %}
 Class Optional<T>
-java.lang.Object
+    java.lang.Object
 {% endhighlight %}
 
-Declaration for **java.util.Optional<T>** class −
+<p>Declaration for **java.util.Optional<T>** class −</p>
 
 {% highlight java %}
 public final class Optional<T>
