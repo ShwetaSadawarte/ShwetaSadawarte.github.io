@@ -15,12 +15,13 @@ Class Optional<T>
     java.lang.Object
 {% endhighlight %}
 
-<p>Declaration for <strong>java.util.Optional<T></strong> class −</p>
+<p>Declaration for <strong>java.util.Optional&#60;T&#62;</strong> class</p>
 
 {% highlight java %}
 public final class Optional<T>
     extends Object
 {% endhighlight %}
+
 <p>This class inherits methods from the java.lang.Object class.</p>
 
 <p>A container object which may or may not contain a non-null value. If a value is present, <strong>isPresent()</strong> will return true and get() will return the value.
