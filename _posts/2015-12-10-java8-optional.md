@@ -6,26 +6,27 @@ tags : [lambda, java8, java]
 {% include JB/setup %}
 
 ###Optional class =
-<p>Optional is a **container object** which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</p>
+<p>Optional is a <strong>container object</strong> which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</p>
 <p>As a java programmer you have seen null pointer exception many times.</p>
-<p>Java SE 8 introduces a new class called **java.util.Optional** that solves some of the problems caused by the null reference.</p>
+<p>Java SE 8 introduces a new class called <strong>java.util.Optional</strong> that solves some of the problems caused by the null reference.</p>
 
 {% highlight java %}
 Class Optional<T>
     java.lang.Object
 {% endhighlight %}
 
-<p>Declaration for **java.util.Optional<T>** class −</p>
+<p>Declaration for <strong>java.util.Optional<T></strong> class −</p>
 
 {% highlight java %}
 public final class Optional<T>
-extends Object
+    extends Object
 {% endhighlight %}
-This class inherits methods from the java.lang.Object class.
+<p>This class inherits methods from the java.lang.Object class.</p>
 
-A container object which may or may not contain a non-null value. If a value is present, **isPresent()** will return true and get() will return the value.
-Additional methods that depend on the presence or absence of a contained value are provided, such as **orElse()** (return a default value if value not present) and **ifPresent()** (execute a block of code if the value is present).
-This is a **value-based class**; use of identity-sensitive operations (including reference equality (==), identity hash code, or synchronization) on instances of Optional may have unpredictable results and should be avoided.
+<p>A container object which may or may not contain a non-null value. If a value is present, <strong>isPresent()</strong> will return true and get() will return the value.
+Additional methods that depend on the presence or absence of a contained value are provided, such as <strong>orElse()</strong> (return a default value if value not present) and <strong>ifPresent()</strong> (execute a block of code if the value is present).</p>
+
+<p>This is a <strong>value-based class</strong>; use of identity-sensitive operations (including reference equality (==), identity hash code, or synchronization) on instances of Optional may have unpredictable results and should be avoided.</p>
 
 **Example -**
 {% highlight java %}
@@ -63,10 +64,10 @@ public class OptionalExample {
 }
 {% endhighlight %}
 
-**Output **
-First parameter is present: false
-Second parameter is present: true
-15
+<p><strong>Output</strong></p>
+<p>First parameter is present: false</p>
+<p>Second parameter is present: true</p>
+<p>15</p>
 
 
 
