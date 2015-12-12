@@ -66,26 +66,26 @@ parameter -> expression body
 
 {% highlight java %}
     lambda expression: () -> System.gc() 	
-        equivalent method: void nn() { System.gc(); } 
+    equivalent method: void nn() { System.gc(); } 
 
-        (int x) -> x+1 	
-        equivalent method: int nn(int x) { return x+1; } 
+    (int x) -> x+1 	
+    equivalent method: int nn(int x) { return x+1; } 
 
-        (int x, int y) -> x+y 
-        equivalent method: int nn(int x, int y) { return x+y; } 
+    (int x, int y) -> x+y 
+    equivalent method: int nn(int x, int y) { return x+y; } 
 
-        (String... args) -> args.length 
-        equivalent method: int nn(String... args) { return args.length; } 
+    (String... args) -> args.length 
+    equivalent method: int nn(String... args) { return args.length; } 
 
-        (String[] args) -> (args!=null)? args.length : 0 
-        equivalent method: int nn(String[] args) { return (args != null) ? args.length: 0; } 
+    (String[] args) -> (args!=null)? args.length : 0 
+    equivalent method: int nn(String[] args) { return (args != null) ? args.length: 0; } 
 
-        (Future f) -> f.get() 
-        equivalent method: Long nn(Future f) throws ExecutionException, InterruptedException { return f.get(); }
+    (Future f) -> f.get() 
+    equivalent method: Long nn(Future f) throws ExecutionException, InterruptedException { return f.get(); }
 
-        (int x) -> { return x+1; } 	//fine
-        (int x) -> return x+1 	//error: not a statement The return keyword can only appear in a statement and statements must be terminated by a semicolon. 
-        (int x) -> return x+1; 	//error: illegal start of expression A statement can only appear in a block, i.e. the statement must be enclosed in curly braces.
+    (int x) -> { return x+1; } 	//fine
+    (int x) -> return x+1 	//error: not a statement The return keyword can only appear in a statement and statements must be terminated by a semicolon. 
+    (int x) -> return x+1; 	//error: illegal start of expression A statement can only appear in a block, i.e. the statement must be enclosed in curly braces.
 {% endhighlight %}
 
 ###Parameter List =
@@ -95,31 +95,31 @@ parameter -> expression body
 <p>If the parameter list consists of exactly one parameter then it can be reduced to an identifier, i.e. the name of the parameter.</p>
 {% highlight java %}
     args -> args.length 	//fine 
-        f -> { return f.get(); } 	//fine 
-        f -> f.get() 	//fine 
+    f -> { return f.get(); } 	//fine 
+    f -> f.get() 	//fine 
 {% endhighlight %}
 
 ###Multiple Parameters with Inferred Types =
 <p>The enclosing parentheses are mandatory. The declared type can only be omitted when the compiler can infer the parameter type from the context in which the lambda expression appears.</p>
 {% highlight java %}
     x -> x+1 	//fine (because there is only one parameter) 
-        (x) -> x+1 	//fine 
-        (int x) -> x+1 	//fine 
-        int x -> x+1 	//error: illegal If the parameter type is specified then the enclosing parenthesis are mandatory 
-        (int x,int y) -> x+y 	//fine 
-        int x,int y -> x+y 	//error: illegal If the parameter type is specified then the enclosing parenthesis are mandatory.
-        (x,y) -> x+y 	//fine 
-        x,y -> x+y 	//error: illegal If there is more than one parameter then the enclosing parenthesis are mandatory.
+    (x) -> x+1 	//fine 
+    (int x) -> x+1 	//fine 
+    int x -> x+1 	//error: illegal If the parameter type is specified then the enclosing parenthesis are mandatory 
+    (int x,int y) -> x+y 	//fine 
+    int x,int y -> x+y 	//error: illegal If the parameter type is specified then the enclosing parenthesis are mandatory.
+    (x,y) -> x+y 	//fine 
+    x,y -> x+y 	//error: illegal If there is more than one parameter then the enclosing parenthesis are mandatory.
 {% endhighlight %}
 
 ###Regular Parameters with Declared Types =
 <p>The enclosing parentheses are mandatory. The parameter list can be empty, in which case it consist of empty brackets. It can contain one or more parameters with a declared type. If one parameter has a declared type, then all parameters must have a declared type. Mixing inferred and declared types is illegal. The declared type can have modifiers like final for instance. The last parameter may be a variable parameter, also know as "varargs" parameter like String... for instance.</p>
 {% highlight java %}
     () -> 42 fine 
-        (String fmt, Object... args) -> String.format(fmt,args) 	//fine 
-        (int x, y) -> x+y 	//error: illegal Mixing inferred and explicit parameter types is illegal. 
-        (final int x) -> x+1 	//fine 
-        (final x) -> x+1 	//error: illegal Only explicit parameter types can have modifiers.
+    (String fmt, Object... args) -> String.format(fmt,args) 	//fine 
+    (int x, y) -> x+y 	//error: illegal Mixing inferred and explicit parameter types is illegal. 
+    (final int x) -> x+1 	//fine 
+    (final x) -> x+1 	//error: illegal Only explicit parameter types can have modifiers.
 {% endhighlight %}
 
 ###Return Type and Throws Clause =
