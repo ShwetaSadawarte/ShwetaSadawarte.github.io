@@ -120,7 +120,7 @@ parameter -> expression body
     (int x, y) -> x+y 	//error: illegal Mixing inferred and explicit parameter types is illegal. 
     (final int x) -> x+1 	//fine 
     (final x) -> x+1 	//error: illegal Only explicit parameter types can have modifiers.
-{% highlight java %}
+{% endhighlight %}
 
 ###Return Type and Throws Clause =
 <p>Different from a method a lambda expression does neither declare a return type nor a throws clause. Both the lambda's return type and its throws clause are always automatically inferred by the compiler from the context in which the lambda expression appears.</p>
