@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags : [lambda, java8, java]
+tags : [Optional, java8, java]
 ---
 {% include JB/setup %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags : [multiple defaults, java8, java]
+tags : [Static defaults, java8, java]
 ---
 {% include JB/setup %}
 
