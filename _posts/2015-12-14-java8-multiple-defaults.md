@@ -43,8 +43,9 @@ public class Book implements EducationalBook, ComicBook {
 }
 {% endhighlight %}
 
-**Example -**
-In interface EducationalBook.java
+
+<p><strong>Example -</strong></p>
+<p>In interface EducationalBook.java</p>
 {% highlight java %}
 public interface EducationalBook {
     default void read(){
@@ -53,7 +54,7 @@ public interface EducationalBook {
 }
 {% endhighlight %}
 
-In interface ComicBook.java
+<p>In interface ComicBook.java</p>
 {% highlight java %}
 public interface ComicBook {
     default void read(){
@@ -62,7 +63,7 @@ public interface ComicBook {
 }
 {% endhighlight %}
 
-In Class Book.java which implements multiple interfaces EducationalBook, ComicBook.
+<p>In Class Book.java which implements multiple interfaces EducationalBook, ComicBook.</p>
 {% highlight java %}
 public class Book implements EducationalBook, ComicBook {
 
