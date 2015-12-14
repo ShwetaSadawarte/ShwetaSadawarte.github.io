@@ -6,7 +6,20 @@ tags : [multiple defaults, java8, java]
 {% include JB/setup %}
 
 ###Multiple Defaults =
-With default functions in interfaces, there is a possibility that a class is implementing two interfaces with same default methods.
+<p>The main reason to introduce default methods is that if at some point we need to add a method to an existing interface, we can add a method without changing the existing implementation classes. To support lambda expressions in collections API and to enhance.In this way, the interface is still compatible with older versions.</p>
+
+
+- Before Java 8 in interfaces we are able to declare only abstract methods.
+- If we declare a method without abstract that will be treated as abstract by default.
+- These methods won't have body means implementations.
+- The class which is implementing this interface need to provide body / implementation for this abstract methods.
+- Now with java 8 default methods we can add methods to interface without disturbing existing functionality.
+- So instead of overriding now we can inherit these default methods from interfaces.
+- Can we override java 8 default method.
+- Defaults methods are also  known as defender methods or virtual extension methods.
+
+
+<p>With default functions in interfaces, there is a possibility that a class is implementing two interfaces with same default methods.</p>
 
 {% highlight java %}
 public interface EducationalBook {
