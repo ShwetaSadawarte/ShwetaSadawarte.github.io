@@ -25,12 +25,12 @@ This is a functional interface whose functional method is test(Object).</p>
 <p>Predicate can be used to evaluate a condition on group/collection of similar objects such that evaluation can result either in true or false.</p>
 
 <p><strong>Method true =</strong></p>
-boolean test(T t)
-    Evaluates this predicate on the given argument.
-Parameters:
-    t - the input argument
-Returns:
-    true if the input argument matches the predicate, otherwise false
+<p>boolean test(T t)<br/>
+Evaluates this predicate on the given argument.</p>
+<p>Parameters:<br/>
+t - the input argument</p>
+<p>Returns<br/>
+true if the input argument matches the predicate, otherwise false</p>
 
 
 <p><strong>Example =</strong></p>
