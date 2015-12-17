@@ -5,13 +5,13 @@ tags : [Static defaults, java8, java]
 ---
 {% include JB/setup %}
 
-###Static Default Methods =
+###Static Default Methods 
 - An interface can also have static helper methods from Java 8 onwards.
 - A class is implementing two interfaces with same static methods. i.e. You may add a method with the same signature in an implementing class, you’re not truly overriding the static interface method. 
 - Being a static method you do not need object reference to call that method.
 - The static method can only be called through the interface or class type reference, not on instance.
-EducationalBook.readingStories();
-ComicBook.readingStories();
+<p>EducationalBook.readingStories();</p>
+<p>ComicBook.readingStories();</p>
 
 
 <p><strong>Example -</strong></p>
