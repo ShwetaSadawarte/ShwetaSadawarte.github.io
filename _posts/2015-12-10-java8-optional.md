@@ -6,8 +6,8 @@ tags : [Optional, java8, java]
 {% include JB/setup %}
 
 ###Optional class =
-<p>Optional is a <strong>container object</strong> which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</p>
-<p>As a java programmer you have seen null pointer exception many times.</p>
+<p>Optional is a <strong>container object</strong> which is used to contain not-null objects. An Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</p>
+<p>Being a java programmer you have seen `NullPointerException` many times.</p>
 <p>Java SE 8 introduces a new class called <strong>java.util.Optional</strong> that solves some of the problems caused by the null reference.</p>
 
 {% highlight java %}
@@ -48,7 +48,7 @@ public class OptionalExample {
     System.out.println(optionalExample.sum(a,b));
    }
 	
-   public Integer sum(Optional<Integer> a, Optional<Integer> b){
+   public int sum(Optional<Integer> a, Optional<Integer> b){
 	
       //Optional.isPresent - checks the value is present or not
 		
@@ -56,10 +56,10 @@ public class OptionalExample {
       System.out.println("Second parameter is present: " + b.isPresent());
 		
       //Optional.orElse - returns the value if present otherwise returns the default value passed.
-      Integer value1 = a.orElse(new Integer(0));
+      int value1 = a.orElse(0);
 		
       //Optional.get - gets the value, value should be present
-      Integer value2 = b.get();
+      int value2 = b.get();
       return value1 + value2;
    }
 }
