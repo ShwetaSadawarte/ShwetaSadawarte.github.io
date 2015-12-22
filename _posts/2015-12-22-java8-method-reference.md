@@ -126,10 +126,11 @@ Method references are just compact and more readable form of a lambda expression
 {% endhighlight %}
 
 
-###Q. When to use method reference.
+<p><strong>Q. When to use method reference.</strong></p>
 <p>When a Lambda expression is invoking already defined method, you can replace it with reference to that method.</p>
 
-###Q. When you can not use Method reference.
+
+<p><strong>Q. When you can not use Method reference.</strong></p>
 <p>You can not pass arguments to the method reference.</p>
 <p>Example, you can not use method reference for following lambda.</p>
 {% highlight java %}
